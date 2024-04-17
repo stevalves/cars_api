@@ -12,7 +12,10 @@ class Car {
   model: string;
 
   @Column()
-  year: string;
+  spec: string;
+
+  @Column()
+  year: number;
 
   @Column()
   fuel: string;
@@ -24,7 +27,7 @@ class Car {
   color: string;
 
   @Column()
-  price: number;
+  fipe: number;
 
   @Column()
   description: string;
