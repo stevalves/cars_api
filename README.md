@@ -19,7 +19,7 @@ Esta aplicação foi desenvolvida como parte do processo seletivo do Grupo Jacto
 
 ###
 
-Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
+Para inciar este projeto, é necessário instalar as dependências. Portanto utilize o comando abaixo para instalar tais dependências:
 
 ```bash
 # caso use npm
@@ -31,7 +31,7 @@ yarn
 
 ## Instalação
 
-Apenas as bibliotecas de teste, ou que os testes dependem, estão no **package.json**. Por isso, instale as dependências do projeto manualmente e não se esqueça de inicia-lo também.
+Instale as dependências do projeto manualmente e não se esqueça de inicia-lo também.
 
 ```bash
 # caso use npm
