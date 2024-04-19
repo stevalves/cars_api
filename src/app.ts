@@ -11,10 +11,10 @@ const app: Express = express();
 app.use(cors())
 app.use(express.json())
 
-app.use("/car", carsRoutes)
+app.use("/cars", carsRoutes)
 
 app.get("/", (req, res) => {
-    return res.json("init")
+    return res.json("Obrigado pela oportunidade!")
 })
 
 app.use(handleErrorMiddleware);
