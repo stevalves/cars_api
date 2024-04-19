@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd src/app.ts"
+    "dev": "tsnd --ignore-watch node_modules src/server.ts",
+    "typeorm": "typeorm-ts-node-commonjs"
   },
   "repository": "git@github.com:stevalves/cars_api.git",
   "author": "stevalves <ealves1710@hotmail.com>",
