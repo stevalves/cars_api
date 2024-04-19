@@ -10,7 +10,7 @@ const carSchema = z.object({
   km: z.number(),
   color: z.string(),
   fipe: z.number(),
-  description: z.string(),
+  description: z.string().nullish(),
   created_at: z.date(),
 });
 

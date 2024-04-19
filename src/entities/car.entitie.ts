@@ -1,4 +1,9 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 
 @Entity("cars")
 class Car {
@@ -29,11 +34,11 @@ class Car {
   @Column()
   fipe: number;
 
-  @Column()
-  description: string;
+  @Column({ type: "text", nullable: true })
+  description!: string | null;
 
   @CreateDateColumn({ type: "timestamp" })
   created_at: Date;
 }
 
-export default Car
+export default Car;
