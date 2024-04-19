@@ -9,8 +9,6 @@ const getCarService = async (id: number): Promise<tCar> => {
   const carRepository: Repository<tCar> = AppDataSource.getRepository(Car);
   const car = await carRepository.findOneBy({ id });
 
-  if (!car) throw new AppError("Car not found!", 404);
-
   return carSchema.parse(car);
 };
 
